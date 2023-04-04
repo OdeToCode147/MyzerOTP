@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body{
+  background-color: #0E2530;
+  color: aliceblue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  margin: 20px 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.entirePage{
+  display: flex;
+}
+.contentBox{
+  margin: 150px 40px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.content{
+  margin-top: 40px;
+}
+
+.smsNumber{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.phoneNumber{
+  color: grey;
+}
+.otpContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.otpBox{
+  margin-right: 20px;
+}
+
+.otp{
+  font-size: 24px;
+  position: relative;
+  bottom: 55px;
+  left: 15px;
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
   color: white;
+  
+
+  
+  letter-spacing: 70px;
 }
 
-.App-link {
-  color: #61dafb;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus{
+  outline: none;
+}
+.content1{
+  margin-top: 0px;
+}
+.reEnter{
+  color: #BD61EC;
+}
+.reEnter:hover{
+  cursor: pointer;
+}
+.verify{
+  width: 300px;
+  text-align: center;
+  margin-top: -50px;
+  color: #0c2a38;
+}
+.verify:hover{
+  filter: invert();
+  cursor: pointer;
+}
+.commentsFail{
+  font-weight: 500;
+  color: #E56945;
+}
+.commentsSuccess{
+  font-weight: 500;
+  color: #6de545;
+}
+.details{
+  border-left: 2px solid #071f2a;
+}
+.data{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.dataBackdrop{
+  height: 87.9vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width :1100px) {
+  .details{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .contentBox{
+    margin: 20px 40px;
   }
 }
